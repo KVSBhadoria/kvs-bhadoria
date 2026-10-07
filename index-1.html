@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="KVS Bhadoria — Mutual Funds, Market News, Business Insights and Trading.">
+  <title>KVS Bhadoria | Invest Today, Grow Tomorrow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --navy:#061a33;--navy2:#08294b;--gold:#c79532;--gold2:#e1b44d;--ink:#101a29;
+  --muted:#667085;--line:#e6e9ef;--bg:#f5f7fa;--white:#fff;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{text-decoration:none;color:inherit}.topbar{background:#031426;color:#dce6f2;padding:8px 4%;display:flex;justify-content:space-between;font-size:12px}.toplinks{display:flex;gap:22px}.toplinks span:first-child{color:#66d17a}
+.header{height:78px;background:#fff;display:flex;align-items:center;padding:0 4%;gap:28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px #061a3310}.brand{display:flex;align-items:center;gap:12px;min-width:330px}.brand strong{font-family:"Playfair Display",serif;font-size:25px;letter-spacing:.3px}.brand small{display:block;font-size:9px;letter-spacing:.4px;color:#27364a}.mark{width:54px;height:54px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--navy);font-weight:800;font-size:14px;position:relative}.mark span{position:absolute;right:-10px;top:-10px;color:var(--gold);font-size:25px}nav{display:flex;gap:22px;align-items:center;flex:1;justify-content:center}nav a{font-size:12px;font-weight:600;color:#27364a;padding:30px 0;border-bottom:2px solid transparent}nav a.active,nav a:hover{color:var(--gold);border-bottom-color:var(--gold)}.menu{display:none;background:none;border:0;font-size:26px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:2px;padding:13px 21px;font-size:12px;font-weight:800;letter-spacing:.2px;border:1px solid transparent;cursor:pointer}.gold{background:var(--gold);color:white}.gold:hover{background:#ad7f27}.outline{background:transparent;color:white;border-color:#d6a846}.header-btn{white-space:nowrap}
+.hero{min-height:390px;background:linear-gradient(105deg,#061a33 0%,#092c50 55%,#031a33 100%);color:white;display:grid;grid-template-columns:1fr 1fr;padding:58px 8% 40px;overflow:hidden;position:relative}.hero-copy{position:relative;z-index:2;max-width:650px}.eyebrow{color:var(--gold2);font-size:13px;font-weight:800;letter-spacing:.6px;margin:0 0 12px}.hero h1{font-size:54px;line-height:1.02;margin:0 0 15px;letter-spacing:-1.8px}.hero h1 span{color:#f3f6fb}.lead{max-width:590px;color:#d7e2ef}.actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}.market-art{position:relative;min-height:300px;margin-top:-25px}.world-grid{position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#1e79b544 0 2px,transparent 3px);background-size:34px 28px;opacity:.45}.bars{position:absolute;bottom:0;left:5%;right:0;height:80%;display:flex;align-items:end;gap:5px;opacity:.5}.bars i{flex:1;background:linear-gradient(#2c8de6,#0c355d);border-top:2px solid #55a8ff}.growth{position:absolute;inset:20px 0 10px;width:100%;height:100%;color:#38a4ff;filter:drop-shadow(0 0 8px #2299ff)}.growth path:first-child{fill:none;stroke:currentColor;stroke-width:5}.growth .arrow{fill:none;stroke:#fff;stroke-width:5}.numbers{position:absolute;top:35px;right:5%;font-size:12px;color:#4f83b2;letter-spacing:2px}
+.ticker{background:#031a31;color:white;display:grid;grid-template-columns:repeat(6,1fr);padding:12px 5%;gap:20px;border-top:1px solid #2b4967}.ticker div{border-right:1px solid #23415f;padding-right:18px}.ticker b,.ticker strong,.ticker em{display:block}.ticker b{font-size:11px;color:#d6deea}.ticker strong{font-size:17px}.ticker em{font-style:normal;color:#51c86c;font-size:11px}
+.quick{background:white;max-width:93%;margin:22px auto 12px;border-radius:8px;box-shadow:0 8px 30px #061a3312;display:grid;grid-template-columns:repeat(5,1fr);overflow:hidden}.quick article{display:flex;gap:13px;padding:22px 18px;border-right:1px solid var(--line)}.quick article:last-child{border:0}.quick span{width:44px;height:44px;border-radius:50%;background:#082c54;color:white;display:grid;place-items:center;font-size:21px;flex:none}.quick h3{margin:0;font-size:13px}.quick p{font-size:11px;color:#687386;margin:5px 0}.quick a,.cards a,.tools>a,.section-title a{font-size:11px;color:#b38325;font-weight:700}
+.content-grid{max-width:93%;margin:0 auto 25px;display:grid;grid-template-columns:1.35fr 1fr .65fr;gap:14px}.panel{background:white;border-radius:8px;box-shadow:0 7px 25px #061a3310;padding:20px}.trade{grid-column:span 1;background:linear-gradient(135deg,#061a33,#092d53);color:white;display:flex;gap:20px}.trade h2{font-size:18px;line-height:1.3;margin:0}.panel-copy{flex:1}.tabs{display:flex;gap:18px;border-bottom:1px solid #ffffff22;margin:20px 0 13px}.tabs button{background:none;border:0;color:#fff;padding:8px 0;font-size:11px;cursor:pointer}.tabs .selected{color:#e1b44d;border-bottom:2px solid #e1b44d}.features{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:9px;font-size:11px;color:#e0e8f2}.phone-chart{width:230px;background:#071522;border:7px solid #1b3044;border-radius:22px;padding:14px 10px;align-self:center}.chart-head span{font-size:9px;color:#9baaba}.chart-head strong{display:block;color:#62cf70;font-size:16px}.phone-chart svg{color:#35c868;background:linear-gradient(#0b253d,#061521);margin-top:5px}.buy-sell{display:flex;gap:5px}.buy-sell button{flex:1;border:0;padding:7px;font-size:10px;font-weight:800;color:white;background:#31a94d}.buy-sell button:last-child{background:#dc4242}.news-panel{grid-column:span 1}.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px}.section-title h2,.tools h2{font-size:13px;margin:0}.news-item{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}.news-item:last-child{border:0}.news-item>span{width:48px;height:38px;background:#e9eff6;border-radius:4px;display:grid;place-items:center;color:#12375e}.news-item b{font-size:11px;display:block}.news-item small{font-size:9px;color:#8791a1}.start{background:#061a33;color:white}.start h2{font-size:15px;line-height:1.45}.tools{grid-column:3}.tool-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.tool-list button{border:0;background:#f4f6f9;text-align:left;padding:10px;border-radius:4px;font-size:10px;color:#263448;cursor:pointer}
+.about{background:#061a33;color:white;padding:48px 7%;display:grid;grid-template-columns:1fr 1fr;gap:50px}.about h2,.business h2,.contact h2,.cards h2{font-size:30px;line-height:1.15;margin:0 0 15px}.about p:not(.eyebrow),.business p,.contact p{color:#c9d4e1}.promise{display:grid;gap:18px;border-left:1px solid #55708e;padding-left:40px}.promise div{display:grid;gap:4px}.promise b{color:#e2b54e}.promise span{font-size:12px;color:#c4cfdd}
+.cards{padding:55px 7%;background:#fff}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card-grid article{padding:25px;border:1px solid var(--line);border-radius:7px}.card-icon{width:46px;height:46px;border-radius:50%;background:#092d53;color:#e3b54e;display:grid;place-items:center;font-size:22px}.card-grid h3{margin:14px 0 6px}.card-grid p{color:#697486;font-size:13px}
+.business{background:#edf2f7;padding:55px 7%;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:18px}.insight{background:white;border-radius:8px;padding:22px}.insight b{color:var(--gold);font-size:12px}.insight h3{font-size:17px}
+.contact{padding:55px 7%;display:grid;grid-template-columns:1fr 1fr;gap:55px;background:white}.contact form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.contact input,.contact textarea{width:100%;border:1px solid #dce2ea;border-radius:4px;padding:13px;font:inherit}.contact textarea{grid-column:1/-1;min-height:110px;resize:vertical}.contact form button{justify-self:start}
+footer{background:#031426;color:#d9e2ec}.footer-main{padding:45px 7%;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footer-brand{min-width:0}.footer-main p{font-size:12px;color:#9caec0}.footer-main h4{font-size:12px;color:#e0b34b}.footer-main>a,.footer-main>div>a{display:block;font-size:11px;color:#b8c5d3;margin:7px 0}.socials{display:flex;gap:8px}.socials a{display:grid!important;place-items:center;width:30px;height:30px;border:1px solid #3d5269;border-radius:50%}.copyright{border-top:1px solid #20384f;padding:14px 7%;font-size:10px;color:#8fa0b1;display:flex;justify-content:space-between;gap:15px}.copyright span{max-width:600px;text-align:right}
+#toast{position:fixed;bottom:24px;right:24px;background:#061a33;color:#fff;padding:13px 17px;border-radius:6px;display:none;z-index:100;box-shadow:0 10px 30px #0003}
+@media(max-width:1100px){nav{gap:11px}.brand{min-width:260px}.content-grid{grid-template-columns:1fr 1fr}.tools{grid-column:span 1}.start{grid-column:span 1}.hero{grid-template-columns:1fr}.market-art{position:absolute;right:0;top:80px;width:52%;opacity:.45}.quick{grid-template-columns:repeat(3,1fr)}.quick article:nth-child(3){border-right:0}.ticker{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.topbar{display:none}.header{height:68px;padding:0 5%;justify-content:space-between}.brand strong{font-size:19px}.brand small{font-size:7px}.brand{min-width:0}.header-btn{display:none}.menu{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:white;padding:12px 5%;flex-direction:column;align-items:stretch;box-shadow:0 10px 20px #0002}.header.open nav{display:flex}.header.open nav a{padding:12px 0}.hero{padding:42px 6%;min-height:520px}.hero h1{font-size:42px}.market-art{width:100%;top:235px;right:-15%;opacity:.3}.ticker{grid-template-columns:repeat(2,1fr);padding:14px 5%}.quick{max-width:90%;grid-template-columns:1fr}.quick article{border-right:0;border-bottom:1px solid var(--line)}.content-grid{max-width:90%;grid-template-columns:1fr}.trade,.news-panel,.tools,.start{grid-column:auto}.trade{flex-direction:column}.phone-chart{width:100%}.about,.contact,.business{grid-template-columns:1fr;padding:42px 7%}.promise{border-left:0;border-top:1px solid #55708e;padding:25px 0 0}.card-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr;padding:35px 7%}.copyright{display:block}.copyright span{display:block;text-align:left;margin-top:8px}}
+
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div>Welcome to KVS BHADORIA — Your Partner in Wealth Creation</div>
+    <div class="toplinks"><span>● Market Open</span><span>Support</span><span>Login</span><span>Register</span></div>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="KVS Bhadoria home">
+      <div class="mark">KVS<span>↗</span></div>
+      <div>
+        <strong>KVS BHADORIA</strong>
+        <small>MUTUAL FUND | NEWS | BUSINESS INSIGHTS | TRADING</small>
+      </div>
+    </a>
+    <button class="menu" aria-label="Open navigation">☰</button>
+    <nav>
+      <a class="active" href="#home">HOME</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#funds">MUTUAL FUNDS</a>
+      <a href="#trading">TRADING</a>
+      <a href="#news">NEWS</a>
+      <a href="#business">BUSINESS INSIGHTS</a>
+      <a href="#tools">TOOLS</a>
+      <a href="#contact">CONTACT US</a>
+    </nav>
+    <a class="btn gold header-btn" href="#contact">OPEN ACCOUNT</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INVEST TODAY, GROW TOMORROW</p>
+        <h1>Build Wealth.<br><span>Secure Tomorrow.</span></h1>
+        <p class="lead">KVS BHADORIA is your trusted partner for Mutual Funds, Market News, Business Insights &amp; Smart Trading Solutions.</p>
+        <div class="actions">
+          <a class="btn gold" href="#funds">EXPLORE MUTUAL FUNDS</a>
+          <a class="btn outline" href="#trading">START TRADING</a>
+          <a class="btn outline" href="#news">READ LATEST NEWS</a>
+        </div>
+      </div>
+      <div class="market-art" aria-hidden="true">
+        <div class="world-grid"></div>
+        <div class="bars">
+          <i style="height:20%"></i><i style="height:27%"></i><i style="height:24%"></i><i style="height:34%"></i>
+          <i style="height:42%"></i><i style="height:38%"></i><i style="height:49%"></i><i style="height:56%"></i>
+          <i style="height:53%"></i><i style="height:65%"></i><i style="height:74%"></i><i style="height:88%"></i>
+        </div>
+        <svg class="growth" viewBox="0 0 620 280" preserveAspectRatio="none">
+          <path d="M10 235 C100 225,115 220,160 205 S240 185,270 165 S340 160,365 135 S430 125,455 95 S520 75,605 15" />
+          <path class="arrow" d="M560 20 L605 15 L585 52" />
+        </svg>
+        <div class="numbers">44.870&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31.012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26.417</div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div><b>NIFTY 50</b><strong>24,502.15</strong><em>+139.45 (0.57%)</em></div>
+      <div><b>SENSEX</b><strong>80,501.99</strong><em>+443.98 (0.55%)</em></div>
+      <div><b>BANK NIFTY</b><strong>52,123.45</strong><em>+278.90 (0.54%)</em></div>
+      <div><b>NIFTY MIDCAP 100</b><strong>56,724.30</strong><em>+312.45 (0.55%)</em></div>
+      <div><b>NIFTY SMALLCAP 100</b><strong>17,654.80</strong><em>+87.65 (0.60%)</em></div>
+      <div><b>GOLD (MCX)</b><strong>72,580</strong><em>+320 (0.44%)</em></div>
+    </section>
+
+    <section class="quick">
+      <article><span>↗</span><div><h3>MUTUAL FUNDS</h3><p>Invest in the best mutual funds for your financial future.</p><a href="#funds">Explore Funds →</a></div></article>
+      <article><span>◫</span><div><h3>TRADING</h3><p>Trade in Stocks, F&amp;O, Commodities &amp; Currencies.</p><a href="#trading">Start Trading →</a></div></article>
+      <article><span>▤</span><div><h3>LATEST NEWS</h3><p>Stay updated with the latest market &amp; financial news.</p><a href="#news">Read News →</a></div></article>
+      <article><span>▣</span><div><h3>BUSINESS INSIGHTS</h3><p>Expert insights and strategies to grow your business.</p><a href="#business">View Insights →</a></div></article>
+      <article><span>♙</span><div><h3>FOR INVESTORS</h3><p>Resources, guidance and tools for smart investors.</p><a href="#tools">Explore More →</a></div></article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel trade" id="trading">
+        <div class="panel-copy">
+          <p class="eyebrow">TRADE &amp; INVEST</p>
+          <h2>All-in-one platform for smart trading &amp; investing.</h2>
+          <div class="tabs"><button class="selected">EQUITY</button><button>F&amp;O</button><button>COMMODITY</button><button>CURRENCY</button></div>
+          <ul class="features">
+            <li>◌ Real-time Quotes</li><li>⌁ Fast Execution</li><li>⊕ Advanced Charts</li><li>♢ Secure &amp; Reliable</li>
+          </ul>
+          <div class="actions"><a class="btn gold" href="#contact">OPEN TRADING ACCOUNT</a><a class="btn outline" href="#contact">TRY DEMO TRADING</a></div>
+        </div>
+        <div class="phone-chart">
+          <div class="chart-head"><span>NIFTY 50</span><strong>24,502.15</strong></div>
+          <svg viewBox="0 0 320 160"><polyline points="0,130 25,120 50,128 75,105 100,112 125,90 150,98 175,76 200,84 225,62 250,72 275,45 320,28" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+          <div class="buy-sell"><button>BUY</button><button>SELL</button></div>
+        </div>
+      </article>
+
+      <aside class="panel news-panel" id="news">
+        <div class="section-title"><h2>LATEST MARKET NEWS</h2><a href="#news">View All News →</a></div>
+        <div class="news-item"><span>₹</span><div><b>RBI keeps repo rate unchanged; focus on growth and inflation</b><small>May 20, 2024 &nbsp;|&nbsp; Market News</small></div></div>
+        <div class="news-item"><span>↗</span><div><b>Markets rally for third straight day; Nifty above 24,500</b><small>May 20, 2024 &nbsp;|&nbsp; Market News</small></div></div>
+        <div class="news-item"><span>◈</span><div><b>SIP inflows hit record high in April 2024</b><small>May 19, 2024 &nbsp;|&nbsp; Mutual Funds</small></div></div>
+        <div class="news-item"><span>▦</span><div><b>Global markets move ahead of key inflation data</b><small>May 18, 2024 &nbsp;|&nbsp; Global News</small></div></div>
+      </aside>
+
+      <aside class="panel start">
+        <p class="eyebrow">START YOUR INVESTMENT JOURNEY</p>
+        <h2>Choose from a wide range of investment options tailored to your goals.</h2>
+        <a class="btn gold" href="#contact">OPEN ACCOUNT NOW</a>
+      </aside>
+
+      <aside class="panel tools" id="tools">
+        <h2>USEFUL TOOLS</h2>
+        <div class="tool-list">
+          <button onclick="tool('SIP Calculator')">▣ SIP Calculator</button>
+          <button onclick="tool('Lumpsum Calculator')">▣ Lumpsum Calculator</button>
+          <button onclick="tool('Retirement Calculator')">▣ Retirement Calculator</button>
+          <button onclick="tool('Goal Planner')">▣ Goal Planner</button>
+        </div>
+        <a href="#contact">View All Tools →</a>
+      </aside>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">ABOUT KVS BHADORIA</p>
+        <h2>Clear information. Smarter decisions.</h2>
+        <p>We are dedicated to helping investors make informed decisions through mutual fund information, real-time news, practical business insights and investor education.</p>
+        <a class="btn gold" href="#contact">KNOW MORE</a>
+      </div>
+      <div class="promise"><div><b>♙ Expert Guidance</b><span>Professional research and expert advice.</span></div><div><b>♢ Trusted Information</b><span>Accurate news and analysis you can trust.</span></div><div><b>♧ Client First Approach</b><span>Your financial growth is our priority.</span></div></div>
+    </section>
+
+    <section class="cards" id="funds">
+      <div class="section-title"><div><p class="eyebrow">MUTUAL FUNDS</p><h2>Build your investment portfolio</h2></div><a href="#contact">Explore all funds →</a></div>
+      <div class="card-grid">
+        <article><div class="card-icon">↗</div><h3>Equity Funds</h3><p>Long-term wealth creation through diversified equity exposure.</p><a href="#contact">Learn more →</a></article>
+        <article><div class="card-icon">◫</div><h3>Debt Funds</h3><p>Explore fixed-income oriented investment options for your goals.</p><a href="#contact">Learn more →</a></article>
+        <article><div class="card-icon">◈</div><h3>Hybrid Funds</h3><p>A mix of asset classes designed for balanced investing.</p><a href="#contact">Learn more →</a></article>
+      </div>
+    </section>
+
+    <section class="business" id="business">
+      <div><p class="eyebrow">BUSINESS INSIGHTS</p><h2>Ideas that help businesses grow.</h2><p>Practical strategies, market observations and actionable insights for entrepreneurs and professionals.</p></div>
+      <div class="insight"><b>01</b><h3>Market &amp; Business Trends</h3><p>Understand the forces shaping markets and businesses.</p></div>
+      <div class="insight"><b>02</b><h3>Growth Strategies</h3><p>Simple frameworks for improving sales, planning and execution.</p></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">CONTACT US</p><h2>Let's build your financial journey.</h2><p>For investment information, investor education, business insights or account assistance, get in touch.</p></div>
+      <form onsubmit="sendMessage(event)">
+        <input required placeholder="Your Name" aria-label="Your Name">
+        <input required type="tel" placeholder="Phone Number" aria-label="Phone Number">
+        <input required type="email" placeholder="Email Address" aria-label="Email Address">
+        <textarea required placeholder="How can we help?" aria-label="Message"></textarea>
+        <button class="btn gold" type="submit">SEND ENQUIRY</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div><div class="brand footer-brand"><div class="mark">KVS<span>↗</span></div><div><strong>KVS BHADORIA</strong><small>INVEST TODAY, GROW TOMORROW</small></div></div><p>Your partner for mutual funds, market news, business insights and smart investing.</p></div>
+      <div><h4>QUICK LINKS</h4><a href="#about">About Us</a><a href="#funds">Mutual Funds</a><a href="#trading">Trading</a><a href="#news">News</a></div>
+      <div><h4>CONTACT</h4><p>+91 12345 67890</p><p>info@kvsbhadoria.com</p><p>www.kvsbhadoria.com</p></div>
+      <div><h4>FOLLOW US</h4><div class="socials"><a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">◎</a><a href="#">▶</a></div></div>
+    </div>
+    <div class="copyright">© 2026 KVS BHADORIA. All Rights Reserved. <span>Mutual fund investments are subject to market risks. Read all scheme related documents carefully.</span></div>
+  </footer>
+
+  <div id="toast" role="status"></div>
+  <script>
+const header=document.querySelector('.header');
+document.querySelector('.menu').addEventListener('click',()=>header.classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('open')));
+function tool(name){showToast(name+" is ready to be connected to your live calculator.");}
+function sendMessage(e){e.preventDefault();showToast("Thank you — your enquiry form is ready for backend/email integration.");e.target.reset();}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display='none',3200);}
+
+</script>
+</body>
+</html>
